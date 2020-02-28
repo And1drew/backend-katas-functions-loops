@@ -1,13 +1,15 @@
 #!/usr/bin/env python
 
+
 import unittest
 import math
 import random
 import main
+import sys
+sys.path.append('/Users/andrew/Documents/python/functions_and_loops')
 
 
 class TestMain(unittest.TestCase):
-
     def test_add(self):
         self.assertIsNotNone(main.add)
         for _ in range(10):
